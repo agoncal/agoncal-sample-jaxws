@@ -17,7 +17,7 @@ public class HelloEJBEndpoint {
     // =          Business methods          =
     // ======================================
 
-    public String saySomething(String something) {
+    public String saySomethingEJB(String something) {
         return "The HelloEJBEndpoint is saying : " + something;
     }
 }

@@ -15,7 +15,7 @@ public class HelloServletEndpoint {
     // =          Business methods          =
     // ======================================
 
-    public String saySomething(String something) {
+    public String saySomethingServlet(String something) {
         return "The HelloServletEndpoint is saying : " + something;
     }
 }

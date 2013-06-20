@@ -71,7 +71,7 @@
 
     <profiles>
         <profile>
-            <id>wsdl</id>
+            <id>wsgen</id>
             <build>
                 <plugins>
                     <plugin>
@@ -79,19 +79,39 @@
                         <artifactId>jaxws-maven-plugin</artifactId>
                         <executions>
                             <execution>
+                                <id>servletEndpoint</id>
                                 <goals>
                                     <goal>wsgen</goal>
                                 </goals>
                                 <configuration>
                                     <sei>org.agoncal.sample.jaxws.endpoint.HelloServletEndpoint</sei>
-                                    <!--Optional-->
-                                    <!--Reads a JAX-WS service endpoint implementation class and generates all of the portable artifacts for a JAX-WS web service-->
                                     <genWsdl>true</genWsdl>
                                     <verbose>true</verbose>
                                     <keep>true</keep>
+                                    <xnocompile>true</xnocompile>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>ejbEndpoint</id>
+                                <goals>
+                                    <goal>wsgen</goal>
+                                </goals>
+                                <configuration>
+                                    <sei>org.agoncal.sample.jaxws.endpoint.HelloEJBEndpoint</sei>
+                                    <genWsdl>true</genWsdl>
+                                    <verbose>true</verbose>
+                                    <keep>true</keep>
+                                    <xnocompile>true</xnocompile>
                                 </configuration>
                             </execution>
                         </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <skipTests>true</skipTests>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
