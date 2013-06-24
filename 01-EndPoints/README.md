@@ -4,30 +4,30 @@
 
 The purpose of this sample is to show that you can have an EJB and a Servlet endpoint on a SOAP Web Service
 
-[Read more on my blog](http://agoncal.wordpress.com/2013/06/25/minime/)
-
 ## Compile and package
 
 Being Maven centric, you can compile and package it with `mvn clean compile`, `mvn clean package` or `mvn clean install`. The `package` and `install` phase will automatically trigger the unit tests. Once you have your war file, you can deploy it.
 
 ## Deploy the sample
 
-This sample has been tested with GlassFish 3.1.2 in several modes :
+This sample has been tested with GlassFish 4.0.0 in several modes :
 
 * GlassFish runtime : [download GlassFish](http://glassfish.java.net/public/downloadsindex.html), install it, start GlassFish (typing `asadmin start-`domain) and once the application is packaged deploy it (using the admin console or the command line `asadmin deploy target/sampleArquilianWytiwyr.war`)
 * GlassFish embedded : use the [GlassFish Maven Plugin](http://maven-glassfish-plugin.java.net/) by running `mvn clean package embedded-glassfish:run`
 
 ## Execute the sample
 
-Once deployed you can call the [ItemEJB REST service](rs/items) and see all the books in the database. You can also run some [curl](http://curl.haxx.se/) commands :
+Once deployed you can access the WSDL at the following URLs :
 
-* `curl -X GET http://localhost:8080/sampleArquilianWytiwyr/rs/items`
-* `curl -X GET -H "accept: application/json" http://localhost:8080/sampleArquilianWytiwyr/rs/items`
+* [http://localhost:8080/sampleJAXWSEndpoints/HelloServletEndpointService?wsdl]
+* [http://localhost:8080/HelloEJBEndpointService/HelloEJBEndpoint?wsdl]
 
-The purpose of this sample is to execute unit and integration tests. So to execute it you can run :
+## Test the sample
 
-* `mvn test` : this will execute the unit test ItemEJBTest which uses Mockito
-* `mvn integration-test` : this will execute both integration tests `ItemEJBWithArquillianIT` and `ItemEJBWithoutArquillianIT`
+Use [SOAPUI](http://www.soapui.org/) to test both Web Services or GlassFish Tester facility : 
+
+* [http://localhost:8080/sampleJAXWSEndpoints/HelloServletEndpointService?tester]
+* [http://localhost:8080/HelloEJBEndpointService/HelloEJBEndpoint?tester]
 
 <div class="footer">
     <span class="footerTitle"><span class="uc">a</span>ntonio <span class="uc">g</span>oncalves</span>
