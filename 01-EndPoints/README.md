@@ -19,8 +19,8 @@ This sample has been tested with GlassFish 4.0.0 in several modes :
 
 Once deployed you can access the WSDL at the following URLs :
 
-* http://localhost:8080/sampleJAXWSEndpoints/HelloServletEndpointService?wsdl
-* http://localhost:8080/HelloEJBEndpointService/HelloEJBEndpoint?wsdl
+* [http://localhost:8080/sampleJAXWSEndpoints/HelloServletEndpointService?wsdl](http://localhost:8080/sampleJAXWSEndpoints/HelloServletEndpointService?wsdl)
+* [http://localhost:8080/HelloEJBEndpointService/HelloEJBEndpoint?wsdl](http://localhost:8080/HelloEJBEndpointService/HelloEJBEndpoint?wsdl)
 
 ## Test the sample
 
