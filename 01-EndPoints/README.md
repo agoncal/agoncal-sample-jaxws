@@ -19,15 +19,15 @@ This sample has been tested with GlassFish 4.0.0 in several modes :
 
 Once deployed you can access the WSDL at the following URLs :
 
-* [http://localhost:8080/sampleJAXWSEndpoints/HelloServletEndpointService?wsdl]
-* [http://localhost:8080/HelloEJBEndpointService/HelloEJBEndpoint?wsdl]
+* [http://localhost:8080/sampleJAXWSEndpoints/HelloServletEndpointService?wsdl]()
+* [http://localhost:8080/HelloEJBEndpointService/HelloEJBEndpoint?wsdl]()
 
 ## Test the sample
 
 Use [SOAPUI](http://www.soapui.org/) to test both Web Services or GlassFish Tester facility : 
 
-* [http://localhost:8080/sampleJAXWSEndpoints/HelloServletEndpointService?tester]
-* [http://localhost:8080/HelloEJBEndpointService/HelloEJBEndpoint?tester]
+* [http://localhost:8080/sampleJAXWSEndpoints/HelloServletEndpointService?tester]()
+* [http://localhost:8080/HelloEJBEndpointService/HelloEJBEndpoint?tester]()
 
 <div class="footer">
     <span class="footerTitle"><span class="uc">a</span>ntonio <span class="uc">g</span>oncalves</span>
