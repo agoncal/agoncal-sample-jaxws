@@ -17,17 +17,17 @@ This sample has been tested with GlassFish 4.0.0 in several modes :
 
 ## Execute the sample
 
-Once deployed you can access the WSDL at the following URLs :
+EJB Web Services endpoints do not have specified context root. So depending on you app server the WSDL location will be different. To set the context root in GlassFish I use the `glassfish-ejb-jar.xml` file. Once deployed you can access the WSDL at the following URLs :
 
 * [http://localhost:8080/sampleJAXWSEndpoints/HelloServletEndpointService?wsdl](http://localhost:8080/sampleJAXWSEndpoints/HelloServletEndpointService?wsdl)
-* [http://localhost:8080/HelloEJBEndpointService/HelloEJBEndpoint?wsdl](http://localhost:8080/HelloEJBEndpointService/HelloEJBEndpoint?wsdl)
+* [http://localhost:8080/sampleJAXWSEndpoints/HelloEJBEndpointService?wsdl](http://localhost:8080/sampleJAXWSEndpoints/HelloEJBEndpointService?wsdl)
 
 ## Test the sample
 
 Use [SOAPUI](http://www.soapui.org/) to test both Web Services or GlassFish Tester facility : 
 
 * [http://localhost:8080/sampleJAXWSEndpoints/HelloServletEndpointService?tester](http://localhost:8080/sampleJAXWSEndpoints/HelloServletEndpointService?tester)
-* [http://localhost:8080/HelloEJBEndpointService/HelloEJBEndpoint?tester](http://localhost:8080/HelloEJBEndpointService/HelloEJBEndpoint?tester)
+* [http://localhost:8080/sampleJAXWSEndpoints/HelloEJBEndpointService?tester](http://localhost:8080/sampleJAXWSEndpoints/HelloEJBEndpointService?tester)
 
 <div class="footer">
     <span class="footerTitle"><span class="uc">a</span>ntonio <span class="uc">g</span>oncalves</span>
