@@ -1,0 +1,3 @@
+<jaxws:bindings wsdlLocation="file:/Users/antoniombp/Documents/Code/Agoncal/agoncal-sample-jaxws/02-Amazon/src/wsdl/AWSECommerceService.wsdl" xmlns:jaxws="http://java.sun.com/xml/ns/jaxws">
+    <jaxws:enableWrapperStyle>true</jaxws:enableWrapperStyle>
+</jaxws:bindings>

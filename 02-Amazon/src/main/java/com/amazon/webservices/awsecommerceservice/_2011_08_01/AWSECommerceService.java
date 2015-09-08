@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "AWSECommerceService", targetNamespace = "http://webservices.amazon.com/AWSECommerceService/2011-08-01", wsdlLocation = "file:/Users/antoniombp/Documents/Code/Agoncal/agoncal-sample-jaxws/02-Amazon/src/wsdl/AWSECommerceService.wsdl")
+@WebServiceClient(name = "AWSECommerceService", targetNamespace = "http://webservices.amazon.com/AWSECommerceService/2011-08-01", wsdlLocation = "file://Users/antoniombp/Documents/Code/Agoncal/agoncal-sample-jaxws/02-Amazon/src/wsdl/AWSECommerceService.wsdl")
 public class AWSECommerceService
     extends Service
 {

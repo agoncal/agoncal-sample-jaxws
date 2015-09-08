@@ -18,10 +18,10 @@
 
     <dependencies>
         <!--This has most of the needed dependencies : Derby, JPA, EJB, Java EE 6...-->
-        <dependency>
-            <groupId>org.glassfish.main.extras</groupId>
-            <artifactId>glassfish-embedded-all</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.glassfish.main.extras</groupId>-->
+            <!--<artifactId>glassfish-embedded-all</artifactId>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -64,6 +64,7 @@
                                     <wsdlFile>AWSECommerceService.wsdl</wsdlFile>
                                 </wsdlFiles>
                                 <keep>true</keep>
+                                <bindingDirectory>${basedir}/src/wsdl</bindingDirectory>
                             </configuration>
                         </execution>
                     </executions>

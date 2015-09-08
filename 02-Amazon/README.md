@@ -4,7 +4,13 @@
 
 To get data from the Amazon database in terms of books and so on. 
 
-## Amazon database
+## Amazon webservice
+
+### WSDL 
+
+* http://webservices.amazon.com/AWSECommerceService/AWSECommerceService.wsdl
+
+### Security 
 
 This relies on the Amazon Access Key ID and Secret Access Key so you should get one to make it work.
 
